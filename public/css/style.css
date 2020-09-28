@@ -1,0 +1,403 @@
+@charset "utf-8";
+
+html, body {
+                  width:  100%;
+                  height: 100%;
+                  margin: 0;
+                }
+
+#chataigneCurseur{
+          position: absolute;
+		  /*z-index: 1;*/
+          }
+		  
+canvas  {
+	position: fixed;
+	/*z-index: -10;*/
+}   
+
+body{
+    margin:0;
+    padding:0;
+    //padding-top:50px;
+    padding-bottom:30px;
+	background-color: #d5dbe6;
+	
+}
+#page{
+	background-color:wheat;
+    width:1300px;
+    margin:0 auto;
+    text-align: center;
+	z-index: -2;
+	
+}
+
+#entete{
+	background-image:url("../images/sky.PNG");
+    padding:20px 40px;
+    background-repeat:no-repeat;
+    height: 100px;
+	text-align: center;
+	color: white;	
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
+}
+
+#entete h2{
+	font-size: 35px;
+}
+
+#entete #logo8{
+    float: left;
+    height:120px;
+    width:120px;
+    margin-left: -4% fixed;
+    margin-top: -2px; 
+	
+}
+
+/*menu*/
+#menu{
+    height: 80px;
+    background:#2e386b;
+    padding:5px 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+	position:relative;
+	z-index: 1;
+	
+}
+/* liste ul*/
+.navigation li.active a{	
+	color:#f5bb00;	
+}
+.navigation li a:hover {
+    background-color: #111;
+    color:#f5bb00;
+}
+.navigation{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;    
+}
+.navigation li a{
+    display:block; 
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    letter-spacing: 2px;   
+}
+.navigation li{
+    float: left;
+}
+
+#pied {
+    //background-image:url(../public/images/pied.jpg);
+    padding:10px 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+	text-align: left;
+    height: 110px;
+	
+}
+#pied h4, p{
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#pied div{
+	margin: 5px;
+	padding: 0px;
+}
+
+#date{
+	text-align: right;
+}
+
+#copyright{
+    text-align: right;
+    font-size: 15px;
+} 
+
+
+#contenu 
+{
+	min-height: 550px;
+	//position: relative;
+	//top: -50px;
+	//background-color: #f0f2bb;	
+}
+
+/*Affichage de la page Accueil */
+
+/* image en background*/
+.accueil #back{
+    position: relative;
+    min-width: 80%;
+    min-height: 80%;
+}
+/* Texte du contenu*/
+.accueil{
+	color: white;
+}
+.banner-text{	
+	position:absolute;
+	top:65%;
+	text-align:center;
+	left:30%;	
+}
+.banner-text h2{	
+	font-size: 50px;
+    margin:0;
+    margin-left: -5%;
+}
+
+.banner-text h2 span{	
+	//color:#033319;
+	color: yellow;
+}
+.banner-text p{	
+	font-size: 35px;
+	margin:0;
+    font-weight:bold;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+.banner-text h4{
+	font-size: 35px;	
+	margin-bottom: 70px;
+    margin-top: 70px;
+}
+/************General settings********/
+.nomPage{
+	font-size: 30px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+}
+.formulaire{
+	font-size: 20px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+	margin-bottom: 10px;
+}
+.formulaire label {
+	display: inline-block;
+	width: 220px;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+input[type="text"] { 
+	line-height: 20px; 
+}
+input[type="email"] { 
+	line-height: 20px; 	
+}
+input[type="password"] { 
+	line-height: 20px; 
+}
+input[type="submit"]{
+	font-size: 20px;
+	margin-bottom: 20px; 
+	margin-top: 20px; 
+}
+.erreur {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+}
+
+/********Page Contacts*********/
+
+.contactPage p{
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+}
+.contactPage h4{
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+}
+
+/********Page MerciContactView*********/
+.pageMerci p{
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/********Page loginView(connexion)*********/
+#creer_compte a {
+	font-size: 20px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-decoration: none;
+}
+.creerCompte h4{
+	font-size: 20px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+}
+/********Page livredorView*********/
+.billet {
+	border: black solid thin;
+	width: 800px;
+	margin: auto;
+	background-color: #fcde5b;
+	margin-bottom: 20px;
+}
+.enteteBillet{
+	border: black solid thin;
+	background-color: #fff77a;
+}
+.livredor h4{
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.livredor p{
+	font-size: 20px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.livredor a{
+	font-size: 15px;
+	text-decoration: none;
+	font-style: italic;
+}
+.livredor .classement {
+	font-size: 15px;
+}
+.livredor #moins a, #plus a{
+	font-size: 25px;
+}
+
+/********Page Categories***********/
+.categories a {
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-decoration: none;
+}
+.categories ul{
+	list-style-type: none;
+}
+.imageProduitPetit img{
+	width: 300px;
+	height: 250px;
+	margin: 10px;
+}
+.imageProduitPetit{
+	margin-top: 50px;
+}
+
+/********Page listProduitsView***********/
+.imageProduitMoyen img{
+	width: 400px;
+	height: 333px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.listeProduits h3{
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.listeProduits a {
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-decoration: none;
+}
+
+/*********Page produitView************/
+.produit p{
+	font-size: 20px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.descriptionProduit{
+	width: 800px;
+	margin: auto;
+}
+.imageProduitGrand img{
+	width: 800px;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+/*************Page A propos de nous*******/
+.apropos p{
+	font-size: 20px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.histoire, .mission{
+	width: 1000px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.apropos img {
+	width: 800px;	
+}
+
+/**************Rotation du logo***************/    
+
+#logo8{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/************Changement de thème***************/
+.dark-mode{
+    background-color:#00151f;
+    color:#800020;
+}
+
+.dark-mode #page {
+	background-color: #180559;
+	color: #f0ddb1;
+}
+.dark-mode #menu{
+	background-color: #8233d6;
+}
+.dark-mode #page a {
+	color: yellow;
+}
+.dark-mode .banner-text{
+	color: #050563;
+}
+
+.dark-mode .banner-text span{
+	color: #033319;
+}
+.dark-mode #entete{
+	background-image:url("../images/night_sky.jpg");
+	color: yellow;
+}
+.dark-mode #pied{
+	color: yellow;
+}
+.dark-mode input[type="text"]{
+	background-color: #0a60c2;
+	color: white;
+}
+.dark-mode input[type="email"]{
+	background-color: #0a60c2;
+	color: white;
+}
+.dark-mode input[type="password"]{
+	background-color: #0a60c2;
+	color: white;
+}
+.dark-mode input[type="submit"]{
+	background-color: #0a60c2;
+	color: white;
+}
+.dark-mode textarea{
+	background-color: #0a60c2;
+	color: white;
+}
+.dark-mode .billet{
+	background-color: #dba70b;
+	color: blue;
+}
+.dark-mode .enteteBillet{
+	background-color: #997405;
+	color: yellow;
+}
